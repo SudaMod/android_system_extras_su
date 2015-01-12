@@ -23,7 +23,7 @@
 #endif
 #define LOG_TAG "su"
 
-// CyanogenMod-specific behavior
+// SudaMod-specific behavior
 #define CM_ROOT_ACCESS_DISABLED      0
 #define CM_ROOT_ACCESS_APPS_ONLY     1
 #define CM_ROOT_ACCESS_ADB_ONLY      2
