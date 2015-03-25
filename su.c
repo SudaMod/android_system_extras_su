@@ -272,7 +272,7 @@ static __attribute__ ((noreturn)) void allow(struct su_context *ctx, const char 
 }
 
 /*
- * CyanogenMod-specific behavior
+ * SudaMod-specific behavior
  *
  * we can't simply use the property service, since we aren't launched from init
  * and can't trust the location of the property workspace.
@@ -285,7 +285,7 @@ int access_disabled(const struct su_initiator *from) {
     size_t len;
 
     data = read_file("/system/build.prop");
-    if (check_property(data, "ro.cm.version")) {
+    if (check_property(data, "ro.sm.version")) {
         get_property(data, build_type, "ro.build.type", "");
         free(data);
 
